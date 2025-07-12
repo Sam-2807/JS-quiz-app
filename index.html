@@ -3,8 +3,11 @@
 <html>
 <head>
     <title>Simple Quiz</title>
-    <style>
-        <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
     <div class="container">
         <h2>Fun Quiz!</h2>
         <hr>
@@ -13,53 +16,12 @@
             </div>
 
         <button id="submit-btn">Submit Quiz</button>
-        <div id="result"></div>
+
+        <div id="result">
+            </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-<div class="container">
-    <h2>Fun Quiz!</h2>
-    <hr>
-    
-    <div class="question">Q1: GitHub kis company ka product hai?</div>
-    <div class="options">
-        <input type="radio" name="q1" value="google"> Google<br>
-        <input type="radio" name="q1" value="microsoft"> Microsoft<br>
-        <input type="radio" name="q1" value="apple"> Apple<br>
-    </div>
-
-    <div class="question" style="margin-top:20px;">Q2: HTML ka poora naam kya hai?</div>
-    <div class="options">
-        <input type="radio" name="q2" value="hypertext"> HyperText Markup Language<br>
-        <input type="radio" name="q2" value="hometext"> HomeText Markup Language<br>
-        <input type="radio" name="q2" value="hyperlink"> HyperLink Markup Language<br>
-    </div>
-
-    <button onclick="showScore()">Show Score</button>
-    <div id="result"></div>
-</div>
-
-<script>
-    function showScore() {
-        let score = 0;
-        
-        // Sahi Jawaab
-        const ans1 = document.querySelector('input[name="q1"]:checked');
-        const ans2 = document.querySelector('input[name="q2"]:checked');
-        
-        if (ans1 && ans1.value === 'microsoft') {
-            score++;
-        }
-        
-        if (ans2 && ans2.value === 'hypertext') {
-            score++;
-        }
-        
-        const resultDiv = document.getElementById('result');
-        resultDiv.textContent = 'Aapka Score: ' + score + ' out of 2';
-    }
-</script>
 
 </body>
 </html>
