@@ -4,16 +4,20 @@
 <head>
     <title>Simple Quiz</title>
     <style>
-        body { font-family: sans-serif; background: #f4f4f4; color: #333; }
-        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; }
-        .question { font-weight: bold; margin-bottom: 10px; }
-        .options div { margin: 5px 0; }
-        button { background: #007BFF; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px;}
-        #result { font-size: 1.2em; font-weight: bold; margin-top: 20px; }
-    </style>
-</head>
-<body>
+        <body>
+    <div class="container">
+        <h2>Fun Quiz!</h2>
+        <hr>
+        
+        <div id="quiz-container">
+            </div>
 
+        <button id="submit-btn">Submit Quiz</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 <div class="container">
     <h2>Fun Quiz!</h2>
     <hr>
